@@ -1,0 +1,53 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class Exercicio1 {
+
+	// Solicite para o usuário:
+	// nome do cliente, valor investido,
+	// tempo (anos) de fidelidade, região (nivel Brasil) onde mora
+	// Se a região for sul ou sudeste, o tempo de fidelidade terá um acréscimo
+	// de 20%
+	// Se o valor investido for menor que 1000, aplique um acrescimo de 1.5%
+	// no valor investido.
+	// Se o valor investido estiver entre 1000 e 5000, aplique um acrescimo
+	// de 2% no valor investido.
+	// Se o valor investido for maior que 5000, aplique um acrescimo de 3% no valor investido.
+	// Se a fidelidade for maior que 5 anos, aplique mais um acrescimo de 1% no valor investido.
+	// No final exiba o valor investido atualizado de acordo com o perfil do usuário
+	// e a diferença que foi obtida entre o valor investido e o valor atual.
+	
+	public static void main(String[] args) {
+		String nome = JOptionPane.showInputDialog("Digite o nome do Cliente").toUpperCase();
+		float valor = Float.parseFloat(JOptionPane.showInputDialog("Digite o valor investido"));
+		short fidelidade = Short.parseShort(JOptionPane.showInputDialog("Digite os anos de fidelidade do Cliente"));
+		String regiao = JOptionPane.showInputDialog("Digite a região do Brasil onde o cliente mora").toUpperCase();
+		float valor_new = 0;	
+		
+		if (valor < 1000) {
+			valor_new = (valor * (float) 1.015);
+		} 
+		else if (valor > 5000) {
+			valor_new = (valor * (float) 1.03);
+		} 
+		else {
+			valor_new = (valor * (float) 1.02);
+		}
+		
+		if (regiao.equals("SUL") || regiao.equals("SUDESTE")) {
+			fidelidade = (short) (fidelidade * 1.2);
+		} 
+		
+		if (fidelidade >= 5) {
+			valor_new = (valor_new * (float) 1.01);
+		} 
+		
+		
+		System.out.println("O valor atualizado eh: R$ " +valor_new); 
+		System.out.println("A diferença entre o aplicado e o atualizado eh de R$ " +(valor_new - valor));
+		
+		
+		
+			}
+}

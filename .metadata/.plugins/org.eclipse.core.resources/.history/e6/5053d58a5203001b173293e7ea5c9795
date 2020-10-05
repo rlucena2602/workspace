@@ -1,0 +1,26 @@
+package br.com.lojauati.teste;
+
+import javax.swing.JOptionPane;
+
+import br.com.lojauati.modelo.Formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		
+		Formula1 objeto; //isso cria um objeto - cria as paredes externas de uma casa
+			// faz ctrl+shift+O e ele busca no projeto a Classe Formula1 - ai aparece a linha import no começo
+	
+		Formula1 carro = new Formula1(); // instanciando um objeto - cria os comodos de uma casa
+			carro.preencherEscuderia(JOptionPane.showInputDialog("Digite a escuderia"));
+			System.out.println("Escuderia.: " + carro.exibirEscuderia());
+			
+			carro.preencherValor(Float.parseFloat(JOptionPane.showInputDialog("Digite o valor")));
+			System.out.println("RPM.......: " + carro.exibirRpm());
+			
+			carro.preencherRpm(Integer.parseInt(JOptionPane.showInputDialog("Digite o rpm"));
+			System.out.println("Valor.....: " + carro.exibirRpm());	
+	}
+
+	
+}

@@ -1,0 +1,15 @@
+package br.com.lojauati.teste;
+
+import br.com.lojauati.modelo.Elevador;
+
+public class testeElevador {
+
+	public static void main(String[] args) {
+		
+		// primeiro instanciar o objeto
+		Elevador objeto = new Elevador(); // faz o ctrl+shift+O
+			sysout.out.println(objeto.exibirTudo());
+		
+	}
+
+}

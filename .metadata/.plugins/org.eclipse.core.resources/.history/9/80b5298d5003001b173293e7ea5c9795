@@ -1,0 +1,22 @@
+package br.com.lojauati.modelo;
+
+public class Formula1 {
+
+	private String escuderia;
+	private float valor;
+	private int rpm;
+	
+	//Como criar métodos no Java:
+	  // <modificador> <tipo do retorno> <nome do metodo> (<tipo do parametro> <nome do parametro>) {...}
+	public void preencherEscuderia(String parametro) {
+		escuderia = parametro.toUpperCase(); //ele passa aki para ter controle que é o significado de deixar private
+	}
+
+	public String exibirEscuderia() {
+		return escuderia;
+		
+	}
+
+
+
+}

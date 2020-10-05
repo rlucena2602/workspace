@@ -1,0 +1,18 @@
+package br.com.ecommerce.modelo;
+
+public class ImplementarCliente {
+
+	public static void main(String[] args) {
+		
+		PessoaJuridica p = new PessoaJuridica();
+		
+		PessoaFisica   p2 = new PessoaFisica();
+		
+		
+		
+		
+		p3 = new PessoaJuridica();
+
+	}
+
+}

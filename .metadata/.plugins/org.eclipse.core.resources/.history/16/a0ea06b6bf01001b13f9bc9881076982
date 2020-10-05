@@ -1,0 +1,21 @@
+package variaveis;
+
+public class Primitivos {
+
+	public static void main(String[] args) {
+	
+		/*
+		 * Tipos primitivos em ordem hierarquica:
+		 * 
+		 * boolean = tipo logico (true or false)                 ex: Gravida=true
+		 * char    = armazena apenas UM caracter                 ex: sexo=M
+		 * byte    = menor entre os inteiros -127 e +127         ex: golsvisitante=0
+		 * short   = numeros inteiros -32000 ateh +320000        ex: qtdecestasvisitante=0
+		 * int     = numeros inteiros -2.000.000.000             ex: qtde de cpfs=0
+		 * float   = menor precisão nas casas decimais 0.00      ex: nota da prova=0
+		 * double  = maior precisão nas casas decimais 0.0000000 ex: valor litro combustivel=0     
+		 */
+
+	}
+
+}

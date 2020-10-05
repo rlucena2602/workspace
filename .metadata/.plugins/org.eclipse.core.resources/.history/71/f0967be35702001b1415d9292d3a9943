@@ -1,0 +1,47 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoSimples {
+	/*
+	 * Identificadores = nomes (classe, variavel)
+	 * 		Regras:
+	 * 			Não pode começar com numero
+	 * 			Não pode conter caracteres especiais, exceto underline 
+	 * 			Não usar palavras reservadas ex.: main else while class int public	
+	 * 		Padrões:
+	 * 			variavel com nome passivel de indentificação e q faça sentido no codigo
+	 * 			sempre comeca com letra minuscula e se for 
+	 * 				composta coloca maiuscula na segunda nomeCliente ou nome_cliente	
+	 */
+
+	public static void main(String[] args) {
+		String nome = JOptionPane.showInputDialog("Digite o nome do aluno").toUpperCase();
+		float nota1 = Float.parseFloat(JOptionPane.showInputDialog("Digite a nota 1"));
+		float nota2 = Float.parseFloat(JOptionPane.showInputDialog("Digite a nota 2"));	
+		float media = (nota1 + nota2) /2;
+		System.out.println("Aluno: " +nome + " sua média foi: " + media);
+		if (media >= 6) {
+			System.out.println("Parabéns " +nome +" você está aprovado");			
+		}
+		if (media <4) {
+			System.out.println("Sr. " +nome +" você se ferrou e repetiu de ano");
+		}
+		
+		if (media >=4 && media <=5.9) {
+			System.out.println("Sr. " +nome +" você se ferrou e repetiu de ano");
+		}
+		
+		// and => &&
+		// or  => ||
+		
+		
+		
+	}
+
+	private static void &&(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

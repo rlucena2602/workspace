@@ -1,0 +1,39 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DesafioRepeticao {
+
+	public static void main(String[] args) {
+		/*
+		 * Jogador 1: Entra com um numero inteiro
+		 * Jogador 2: deve descobrir o numero
+		 * Exibir o Parabens qdo o J2 descobrir.
+		 * 
+		 * J2 precisa receber dica enquanto naum acertar - maior ou menor
+		 * no final exibir qts tentativas foram necessarias para o j2 acertar		  
+		 */
+		
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("J1 - Insira o numero a ser descoberto"));
+					//showInput sempre recebe string o parseInt traduz para podermos usar numero
+		
+		int resposta = 0;
+		
+		do {
+		
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("J2 - Insira seu palpite"));
+		
+							
+		if (num1 == num2) {
+			System.out.println("Parabéns, vc acertou o número do J1: " +num1 );
+		}
+		else {
+			System.out.println("Vc não acertou! " );
+		}
+			resposta = Integer.parseInt(JOptionPane.showInputDialog("J2 - Digite seu palpite novamente"));
+		}
+		while (resposta != num1);
+	
+	}
+
+}

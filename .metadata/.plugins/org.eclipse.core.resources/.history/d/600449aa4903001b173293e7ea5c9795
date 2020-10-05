@@ -1,0 +1,13 @@
+package br.com.lojauati.teste;
+
+import br.com.lojauati.modelo.Formula1;
+
+public class TesteFormula1 {
+
+	public static void main(String[] args) {
+		
+		Formula1 objeto;
+			// faz ctrl+shift+O e ele busca no projeto a Classe Formula1 - ai aparece a linha import no começo
+	}
+
+}

@@ -1,0 +1,56 @@
+package br.com.lojauati.modelo;
+
+public class Televisao {
+
+	// definir atributos
+	
+	private int canal;
+	private boolean status;
+	private int volume;
+	
+	
+	
+	public void aVol() {
+		if (status = true && volume < aVol) {
+		volume = volume + aVol;
+		}
+	}
+	
+	
+	public void preencherStatus(boolean pStatus) {
+		status = pStatus;
+	}	
+		
+	public void preencherVolume(int pVol) {
+		if (status = true) {
+		volume = pVol;
+		}
+	}		
+	
+	public void preencherCanal(int pCanal) {
+		if (status = true) {
+		canal = pCanal;
+		}
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

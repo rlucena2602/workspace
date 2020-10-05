@@ -1,0 +1,75 @@
+package br.com.lojauati.modelo;
+
+public class Formula1 {
+
+	private String escuderia;
+	private float valor;
+	private int rpm;
+	
+	//Como criar métodos no Java:
+	  // <modificador> <tipo do retorno> <nome do metodo> (<tipo do parametro> <nome do parametro>) {...}
+	
+	// abaixo o exercicio complemento
+	
+	// Crie um método para preencher todos os atributos - preencherTudo()
+	// Crie um método para exibir todos os atributos - exibirTudo()
+	// Crie um método para exibir o valor com um desconto de 10% - exibirPromocao()
+	// Crie um método para exibir o valor com um desconto que será
+	// recebido por parâmetro - exibirPromocao()
+	
+	
+	public float exibirPromocao() {
+		return valor * (float) 0.9;
+	}
+	public String exibirTudo() {
+		return escuderia + "/n" + valor + "/n" + rpm;
+	}
+	
+	public void preencherTudo(String pEscuderia, float pValor, int pRpm) {
+		escuderia = pEscuderia.toUpperCase();
+		valor = pValor;
+		rpm = pRpm;
+	
+	
+	
+	}
+	
+	
+}	
+	/* abaixo o original
+	 
+	 
+	public void preencherEscuderia(String parametro) {
+		escuderia = parametro.toUpperCase(); //ele passa aki para ter controle que é o significado de deixar private
+	}
+	public String exibirEscuderia() {
+		return escuderia;
+		
+	}
+	
+	public void preencherValor(float parametro) {
+	if (parametro>0) {
+		valor = parametro; 
+	  }
+	}
+	public float exibirValor() {
+		return valor;
+	}
+
+	public void preencherRpm(int parametro) {
+	if (parametro>0) {	
+		rpm = parametro;
+	  } 
+	}
+	public int exibirRpm() {
+		return rpm;
+		
+	
+			
+	}
+	
+}	
+	*/
+	
+	
+	
